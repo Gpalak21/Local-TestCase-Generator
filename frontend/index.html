@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Test Case Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="glass-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-robot"></i>
+                <h1>TestGen<span>.ai</span></h1>
+            </div>
+            <div class="status-indicator">
+                <span class="dot"></span>
+                <span id="system-status">System Ready</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-interface">
+                <div class="messages" id="chat-messages">
+                    <div class="message system">
+                        <div class="avatar"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="content">
+                            <p>Hello! I'm your AI QA Assistant. Describe a feature, and I'll generate structured test
+                                cases for you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <textarea id="user-input"
+                        placeholder="Describe your feature here (e.g., 'Login page with email validation')..."
+                        rows="1"></textarea>
+                    <button id="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
