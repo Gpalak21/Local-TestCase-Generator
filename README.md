@@ -23,7 +23,7 @@ graph LR
     end
     
     subgraph "AI Engine"
-    Ollama[🦙 Ollama (Llama 3.2)]
+    Ollama["🦙 Ollama (Llama 3.2)"]
     end
 
     User -->|Enters Feature| UI
