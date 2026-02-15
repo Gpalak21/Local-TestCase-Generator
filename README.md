@@ -13,7 +13,7 @@ How the project components interact to generate test cases:
 ```mermaid
 graph LR
     User[👤 User]
-    subgraph "Frontend (Port 8080)"
+    subgraph "Frontend (Port 8081)"
     UI[🖥️ Web Interface]
     end
     
@@ -79,11 +79,11 @@ chmod +x start_deployment.sh
 
 ### 4. Access the App
 Open your browser and navigate to:
-**[http://localhost:8080](http://localhost:8080)**
+**[http://localhost:8081](http://localhost:8081)**
 
 ## 🎮 Usage
 
-1.  Open the web interface at `http://localhost:8080`.
+1.  Open the web interface at `http://localhost:8081`.
 2.  Type a feature description in the chat box.
     *   *Example: "A login page with email validation and 'Forgot Password' link."*
 3.  Press **Enter** or click **Send**.
